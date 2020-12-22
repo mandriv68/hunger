@@ -1,0 +1,16 @@
+@mixin fontFace($font, $fontWeight, $format) {
+  @each $name, $weight in $fontWeight {
+    @font-face {
+      font-family: #{$font};
+      src: url("../fonts/#{$font}-#{$name}.#{$format}") format("#{$format}");
+      font-weight: #{$weight};
+      font-style: normal;
+    }
+  }
+}
+
+%hideText {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}

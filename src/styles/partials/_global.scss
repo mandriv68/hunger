@@ -1,0 +1,99 @@
+@include fontFace(WorkSans, $fontWorkSans, woff2);
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 1px rgba(75,190,252,1);
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+html {
+  font-size: var(--main-font-size);
+  background-color: rgb(229, 229, 229);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1366px;
+  min-height: 100vh;
+  font-family: WorkSans, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: var(--primary-color);
+  background: var(--main-bg-color);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+.container {
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inlineSvg {
+  display: inline-block;
+  vertical-align: middle;
+}

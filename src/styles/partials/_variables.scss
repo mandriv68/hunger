@@ -1,0 +1,18 @@
+:root {
+  --main-font-size: 16px;
+  --primary-color: #151c22;
+  --primary-lighter-color: #727a82;
+  --main-bg-color: #ffffff;
+  --secondary-bg-color: #f1f2f4;
+}
+
+$mobail: "min-width: 375px";
+$tablet: "min-width: 768px";
+$desktop: "min-width: 1366px";
+
+$fontWorkSans: (
+  Regular: 400,
+  Medium: 600,
+  Bold: 700,
+  ExtraBold: 800
+);
