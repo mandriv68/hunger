@@ -1,0 +1,13 @@
+.mainFooter {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgba(0, 0, 0, 0.9);
+
+  &__copyright {
+    margin: 0 auto;
+    width: max-content;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}

@@ -1,0 +1,55 @@
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  &__list {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s linear;
+
+    &--active {
+      opacity: 1;
+    }
+
+    &--empty {
+      position: static;
+    visibility: hidden;
+    }
+  }
+
+  &__pagination {
+    position: absolute;
+    left: 50%;
+    bottom: 45px;
+    display: flex;
+    transform: translateX(-50%);
+  }
+
+  &__paginationItem:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__paginationToggle {
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 0.5;
+    &--active {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<section class="contentBlock container booking">
+  <div class="contentBlock__textBlock">
+    <h2 class="sectionTitle">Book a table</h2>
+    <form class="booking__form" action="" method="post" name="booking">
+      <div class="booking__formBody">
+        <input class="booking__item" type="text" name="name" placeholder="Name">
+        <input class="booking__item" type="email" name="email" placeholder="Email">
+        <input class="booking__item" type="tel" name="telephone" placeholder="Phone">
+        <select class="booking__item" name="quantity-people">
+          <option value="0" selected disabled>People</option>
+          <option value="1">1 person</option>
+          <option value="2">2 person</option>
+        </select>
+        <input class="booking__item" type="text" name="data" placeholder="Date (mm/dd)">
+        <select class="booking__item" name="time">
+          <option value="0" selected disabled>Time</option>
+          <option value="19:00" selected>19:00</option>
+          <option value="20:00" selected>20:00</option>
+          <option value="21:00" selected>21:00</option>
+          <option value="22:00" selected>22:00</option>
+          <option value="23:00" selected>23:00</option>
+        </select>
+      </div>
+      <button class="booking__btn siteBtn siteBtn--yellow" type="submit">Book now</button>
+    </form>
+  </div>
+  <div class="contentBlock__imageBlock">
+    <div class="contentBlock__image">
+      <img src="img/clock.jpg" alt="" srcset="img/clock.webp">
+    </div>
+  </div>
+</section>

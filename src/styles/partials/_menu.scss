@@ -1,0 +1,119 @@
+.menu {
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  align-items: center;
+
+  & .sectionTitle {
+    margin-bottom: 40px;
+  }
+
+  & .sectionSubtitle {
+    max-width: 600px;
+    margin-bottom: 50px;
+    text-align: center;
+    letter-spacing: 0;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  &__paginationItem {
+    &:not(:last-child) {
+      border-right: 1px solid rgba(51, 51, 51, 0.2);
+    }
+  }
+
+  &__toggle {
+    width: 130px;
+    height: 50px;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: transparent;
+    transition: all 0.5s linear;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+
+    &:hover,
+    &[data-active="1"] {
+      border-color: var(--yellow-bg-color);
+    }
+  }
+
+  &__slider {
+    width: 100%;
+  }
+
+  &__sliderList {
+    position: relative;
+    height: 400px;
+  }
+
+  &__slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    opacity: 0;
+    transform: scale(0.3);
+    transition: all 0.5s linear;
+
+    &--active {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__item {
+    --content-gap: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% / 3 - var(--content-gap) / 2);
+    margin-bottom: 30px;
+    font-family: Banny;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+    color: var(--primary-lighter-color);
+  }
+
+  &__itemName {
+    margin-right: auto;
+    overflow: hidden;
+  }
+
+  &__itemDelimiter {
+    margin-right: 1rem;
+    letter-spacing: 0.5rem;
+  }
+
+  &__itemPrice {
+    display: flex;
+    &::after {
+      content: attr(data-currency);
+      margin-left: 5px;
+    }
+  }
+
+  &__itemDescription {
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-transform: none;
+  }
+}

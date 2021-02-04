@@ -1,11 +1,13 @@
 'use strict';
 
 export default class Burger {
-  constructor(burgerWidth, burgerHeight, burgerColor, navSelector) {
+  constructor(burgerWidth, burgerHeight, burgerColor, burgerLineThickness, navSelector) {
     this.burger = document.querySelector('.burger');
+    this.burgerLine = this.burger.querySelector('.burger__line');
     this.burger.style.width = `${burgerWidth}px`;
     this.burger.style.height = `${burgerHeight}px`;
     this.burger.style.color = `${burgerColor}`;
+    this.burgerLine.style.height = `${burgerLineThickness}px`;
     this.navigation = document.querySelector(`.${navSelector}`);
   }
 

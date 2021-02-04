@@ -1,0 +1,49 @@
+/*
+==========
+zoomer
+==========
+*/
+@keyframes zoomer {
+  0% {
+    opacity: 0;
+    transform: scale(.3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.zoomer{
+	animation-name: zoomer;
+	animation-duration: 0.5s;
+	animation-timing-function: cubic-bezier(0.5, 0.2, 0.3, 1.0);
+  animation-iteration-count: 1;
+	// visibility: visible !important;
+}
+
+
+/*
+==========
+zoomerOut
+==========
+*/
+@keyframes zoomerOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+.zoomerOut{
+	animation-name: zoomerOut;
+	animation-duration: 0.5s;
+	animation-timing-function: cubic-bezier(0.5, 0.2, 0.3, 1.0);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+	visibility: visible !important;
+}

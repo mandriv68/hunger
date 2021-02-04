@@ -1,0 +1,14 @@
+.contacts {
+  padding-top: 100px;
+
+  & .sectionTitle {
+    margin-bottom: 50px;
+  }
+
+  & .contentText--accetuated {
+    margin: 0 auto 50px;
+    max-width: 570px;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+}

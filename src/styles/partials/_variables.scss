@@ -1,18 +1,21 @@
 :root {
-  --main-font-size: 16px;
-  --primary-color: #151c22;
-  --primary-lighter-color: #727a82;
+  --main-font-size: 10px;
+  --primary-color: #000000;
+  --primary-lighter-color: #333333;
   --main-bg-color: #ffffff;
-  --secondary-bg-color: #f1f2f4;
+  --secondary-bg-color: #e5e5e5;
+  --yellow-bg-color: #e8c300;
 }
 
 $mobail: "min-width: 375px";
 $tablet: "min-width: 768px";
 $desktop: "min-width: 1366px";
 
-$fontWorkSans: (
+$fontOpenSans: (
   Regular: 400,
-  Medium: 600,
-  Bold: 700,
-  ExtraBold: 800
+  Bold: 700
+);
+
+$fontBanny: (
+  Regular: 400
 );
